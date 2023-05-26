@@ -38,6 +38,9 @@ return require('packer').startup(function(use)
   -- testing
   use 'vim-test/vim-test'
 
+  -- tmux integration
+  use 'christoomey/vim-tmux-navigator'
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
