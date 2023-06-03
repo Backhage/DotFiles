@@ -25,4 +25,13 @@ require("lspconfig").lua_ls.setup {
 require("lspconfig").pylsp.setup {
     on_attach = on_attach,
     capabilities = capabilities,
+    settings = {
+        pylsp = {
+            plugins = {
+                pycodestyle = {
+                    maxLineLength = 120
+                }
+            }
+        }
+    },
 }
