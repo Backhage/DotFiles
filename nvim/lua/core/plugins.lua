@@ -25,8 +25,12 @@ return require('packer').startup(function(use)
       'neovim/nvim-lspconfig',
   }
   use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.1',
-    requires = { {'nvim-lua/plenary.nvim'} }
+      'nvim-telescope/telescope.nvim', tag = '0.1.1',
+      requires = { {'nvim-lua/plenary.nvim'} }
+  }
+  use {
+      'jose-elias-alvarez/null-ls.nvim',
+      requires = { { 'nvim-lua/plenary.nvim' } }
   }
   -- completion
   use 'hrsh7th/nvim-cmp'
