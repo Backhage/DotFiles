@@ -32,12 +32,20 @@ return require('packer').startup(function(use)
       'jose-elias-alvarez/null-ls.nvim',
       requires = { { 'nvim-lua/plenary.nvim' } }
   }
-  -- completion
+  -- code completion
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'L3MON4D3/LuaSnip'
   use 'saadparwaiz1/cmp_luasnip'
   use 'rafamadriz/friendly-snippets'
+
+  -- debugging
+  use 'mfussenegger/nvim-dap'
+  use 'mfussenegger/nvim-dap-python'
+  use {
+      "rcarriga/nvim-dap-ui",
+      requires = { {"mfussenegger/nvim-dap"} }
+  }
 
   -- testing
   use 'vim-test/vim-test'
