@@ -8,4 +8,4 @@ require("core.plugin_config.dap_config")
 require("core.plugin_config.completions")
 require("core.plugin_config.vim-test")
 require("core.plugin_config.null-ls")
-
+require("core.plugin_config.fugitive")
