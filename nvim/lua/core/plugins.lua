@@ -53,6 +53,9 @@ return require('packer').startup(function(use)
   -- tmux integration
   use 'christoomey/vim-tmux-navigator'
 
+  -- git 
+  use 'tpope/vim-fugitive'
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
