@@ -28,10 +28,10 @@ return require('packer').startup(function(use)
       'nvim-telescope/telescope.nvim', tag = '0.1.1',
       requires = { {'nvim-lua/plenary.nvim'} }
   }
-  use {
-      'jose-elias-alvarez/null-ls.nvim',
-      requires = { { 'nvim-lua/plenary.nvim' } }
-  }
+
+  -- code formattting
+  use 'mhartington/formatter.nvim'
+
   -- code completion
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
