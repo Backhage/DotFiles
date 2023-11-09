@@ -36,7 +36,10 @@ return require('packer').startup(function(use)
   }
 
   -- code formattting
-  use 'mhartington/formatter.nvim'
+  use {
+      'nvimtools/none-ls.nvim',
+      requires = { { 'nvim-lua/plenary.nvim' } }
+  }
 
   -- code completion
   use 'hrsh7th/nvim-cmp'
