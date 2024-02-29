@@ -38,6 +38,11 @@ require("lspconfig").pylsp.setup {
     },
 }
 
+require("lspconfig").clangd.setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+}
+
 require("lspconfig").gopls.setup {
     on_attach = on_attach,
     capabilities = capabilities,
@@ -48,7 +53,7 @@ require("lspconfig").rust_analyzer.setup {
     capabilities = capabilities,
 }
 
-require("lspconfig").clangd.setup {
+require("lspconfig").tsserver.setup {
     on_attach = on_attach,
     capabilities = capabilities,
 }
