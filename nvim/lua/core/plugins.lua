@@ -49,7 +49,10 @@ return require('packer').startup(function(use)
   use 'rafamadriz/friendly-snippets'
 
   -- debugging
-  use 'mfussenegger/nvim-dap'
+  use {
+      'mfussenegger/nvim-dap',
+      requires = { { 'nvim-neotest/nvim-nio' } }
+  }
   use 'mfussenegger/nvim-dap-python'
   use {
       "rcarriga/nvim-dap-ui",
