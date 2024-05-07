@@ -1,8 +1,19 @@
 #!/bin/sh
+
+# Check if $HOME/.local/bin is in PATH
 case ":${PATH}:" in
     *:"$HOME/.local/bin":*)
-        ;;
+        ;;  # Do nothing if already present
     *)
         export PATH="$HOME/.local/bin:$PATH"
+        ;;
+esac
+
+# Check if $HOME/go/bin is in PATH
+case ":${PATH}:" in
+    *:"$HOME/go/bin":*)
+        ;;  # Do nothing if already present
+    *)
+        export PATH="$HOME/go/bin:$PATH"
         ;;
 esac
